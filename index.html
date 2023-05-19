@@ -13,6 +13,7 @@
 </head>
 
 <body class="bg-black">
+
   <!-- Navbar -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -48,6 +49,7 @@
       </div>
     </nav>
   </header>
+
   <!-- Bienvenida -->
   <section id="welcome">
     <div class="py-5  text-light">
@@ -61,6 +63,7 @@
     </div>
   </section>
   <br>
+
   <!-- Acerca de mí-->
   <section class="py-5" id="about">
     <div class="container">
@@ -97,6 +100,7 @@
       </div>
     </div>
   </section>
+
   <!-- Habilidades -->
   <div class="container text-light" id="habilidades">
     <br>
@@ -140,6 +144,7 @@
     </div>
   </div>
   <br>
+  
   <!-- Formacion academica -->
   <section id="formacion" class="text-light">
     <div class="container py-5">
@@ -232,19 +237,19 @@
         <h2 class="text-center mb-5 text-light">Contáctame</h2>
         <form>
           <div class="mb-3">
-            <label for="nombre" class="form-label text-light">Nombre completo</label>
+            <label for="nombre" class="form-label text-light">Nombre completo:</label>
             <input type="text" class="form-control bg-secondary" id="nombre" name="nombre" required>
           </div>
           <div class="mb-3">
-            <label for="correo" class="form-label text-light">Correo electrónico</label>
+            <label for="correo" class="form-label text-light">Correo electrónico:</label>
             <input type="email" class="form-control bg-secondary" id="correo" name="correo" required>
           </div>
           <div class="mb-3">
-            <label for="asunto" class="form-label text-light">Asunto</label>
+            <label for="asunto" class="form-label text-light">Asunto:</label>
             <input type="text" class="form-control bg-secondary" id="asunto" name="asunto" required>
           </div>
           <div class="mb-3">
-            <label for="mensaje" class="form-label text-light">Mensaje</label>
+            <label for="mensaje" class="form-label text-light">Mensaje:</label>
             <textarea class="form-control bg-secondary" id="mensaje" name="mensaje" rows="5" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Enviar mensaje</button>
@@ -257,16 +262,18 @@
   <!-- Pie de página -->
   <footer class="bg-dark text-white py-3">
     <div class="container text-center">
-      <p>Todos los derechos reservados &copy; 2023 Willian Zape</p>
+      <p>Pagina creada por Willian Zape &copy; 2023 </p> 
     </div>
   </footer>
+
   <!-- Enlazar Bootstrap y Javascript -->
-  <script src="js.js"></script>
+  <script src="funciones.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!--Funcion de navbar-->
   <script>
     $(document).ready(function () {
@@ -279,6 +286,7 @@
       });
     });
   </script>
+
   <!--Iniciar AOS-->
   <script>
     AOS.init();
