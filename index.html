@@ -1,295 +1,392 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <!-- Enlaces a los archivos CSS de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <!--Iconos-->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portafolio</title>
-  <!-- Enlaces a los archivos CSS de Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="stilos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.3.1/dist/aos.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="stilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@3.3.1/dist/aos.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<body class="bg-black">
+  <body class="bg-black">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">Mi Portafolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#welcome">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formacion">Formación academica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <div class="container">
-        <a class="navbar-brand" href="/index.html">Mi Portafolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active ">
-              <a class="nav-link" href="#welcome">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#habilidades">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#formacion">Formación academica</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-          </ul>
+    <!-- Bienvenida -->
+    <section id="welcome">
+      <div class="py-5 text-light">
+        <div class="container">
+          <h1 class="display-4 text">
+            Bienvenido a mi Portafolio<span></span>
+          </h1>
+          <p class="lead text">
+            Aquí encontrarás algunos de mis proyectos y habilidades en el mundo
+            de la programación.<span></span>
+          </p>
         </div>
       </div>
-    </nav>
-  </header>
+    </section>
 
-  <!-- Bienvenida -->
-  <section id="welcome">
-    <div class="py-5  text-light">
-      <div class="container">
-        <h1 class="display-4 text">Bienvenido a mi Portafolio<span></span></h1>
-        <p class="lead text ">
-          Aquí encontrarás algunos de mis proyectos y habilidades en el mundo de
-          la programación.<span></span></p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Acerca de mí-->
-  <section class="py-5" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 ">
-          <br>
-          <h2 class="text-light text-center">Sobre mí</h2>
-          <br>
-          <h3 class="text-light">Hola soy</h3>
+    <!-- Acerca de mí-->
+    <section class="py-5" id="about">
+      <div class="container about">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="text-light text-center">Sobre mí</h2>
+            <h3 class="text-light">Hola soy</h3>
             <h3 class="name">Willian Zape</h3>
-              <p class="text-light">
-                Soy un desarrollador web apasionado por crear soluciones digitales
-                que satisfagan las necesidades de los usuarios. Me encanta
-                trabajar en equipo y aprender cosas nuevas todos los días.
-              </p>
-              <p class="text-light">Mi principal objetivo es seguir avanzando en mi carrera como programador y alcanzar
-                el éxito en esta industria. Me apasiona la tecnología y estoy comprometido en mejorar constantemente mis
-                habilidades y conocimientos para poder contribuir de manera significativa en los proyectos en los que
-                participe.</p>
+            <p class="text-light">
+              Soy un desarrollador web apasionado por crear soluciones digitales
+              que satisfagan las necesidades de los usuarios. Me encanta
+              trabajar en equipo y aprender cosas nuevas todos los días.
+            </p>
+            <p class="text-light">
+              Mi principal objetivo es seguir avanzando en mi carrera como
+              programador y alcanzar el éxito en esta industria. Me apasiona la
+              tecnología y estoy comprometido en mejorar constantemente mis
+              habilidades y conocimientos para poder contribuir de manera
+              significativa en los proyectos en los que participe.
+            </p>
 
-              <p class="text-light">Creo firmemente en la importancia de establecer objetivos claros y medibles, y estoy
-                comprometido en trabajar duro para alcanzarlos. Me he dedicado a adquirir una amplia variedad de
-                habilidades y herramientas, incluyendo diversos lenguajes de programación, bases de datos y frameworks,
-                para poder abordar cualquier desafío con confianza.
-              </p>
-              <p class="text-light">Mi mayor sueño es convertirme en un programador altamente exitoso y reconocido en la
-                industria, capaz de liderar proyectos de gran envergadura y aportar soluciones innovadoras a problemas
-                complejos. Estoy seguro de que con perseverancia, dedicación y trabajo duro, puedo alcanzar este
-                objetivo y cumplir mis sueños</p>
-        </div>
-        <div class="col-lg-6" >
-          <img src="imgs/Yo.jpeg" alt="Foto de perfil" class="img-fluid" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Habilidades -->
-  <div class="container text-light" id="habilidades">
-    <br>
-    <h2 class="mt-5 mb-4 text-center" style="margin-top: 100px;">Habilidades</h2>
-    <div class="row" style="margin-top: 100px;">
-      <div class="col-md-12">
-        <div class="progress-tittle">
-          <h3 >HTML</h3>
-          <div class="progress">
-            <div class="progress-bar" style="width:75%; background: rgb(132, 0, 255);">
-              <div class="progress-value">75%</div>
-            </div>
+            <p class="text-light">
+              Creo firmemente en la importancia de establecer objetivos claros y
+              medibles, y estoy comprometido en trabajar duro para alcanzarlos.
+              Me he dedicado a adquirir una amplia variedad de habilidades y
+              herramientas, incluyendo diversos lenguajes de programación, bases
+              de datos y frameworks, para poder abordar cualquier desafío con
+              confianza.
+            </p>
+            <p class="text-light">
+              Mi mayor sueño es convertirme en un programador altamente exitoso
+              y reconocido en la industria, capaz de liderar proyectos de gran
+              envergadura y aportar soluciones innovadoras a problemas
+              complejos. Estoy seguro de que con perseverancia, dedicación y
+              trabajo duro, puedo alcanzar este objetivo y cumplir mis sueños
+            </p>
           </div>
-        </div>
-        <div class="progress-tittle">
-          <h3 >CSS</h3>
-          <div class="progress">
-            <div class="progress-bar" style="width:60%; background: rgb(0, 140, 255);">
-              <div class="progress-value">60%</div>
-            </div>
-          </div>
-        </div>
-        <div class="progress-tittle">
-          <h3 >JavaScript</h3>
-          <div class="progress">
-            <div class="progress-bar" style="width:30%; background: rgb(255, 0, 98);">
-              <div class="progress-value">30%</div>
-            </div>
-          </div>
-        </div>
-        <div class="progress-tittle">
-          <h3 >Bootstrap</h3>
-          <div class="progress">
-            <div class="progress-bar" style="width:65%; background: rgb(255, 145, 0);">
-              <div class="progress-value">65%</div>
-            </div>
+          <div class="col-lg-6">
+            <img src="imgs/Yo.jpeg" alt="Foto de perfil" class="img-fluid" />
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-  <br>
-  
-  <!-- Formacion academica -->
-  <section id="formacion" class="text-light">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase" style="margin-top: 100px;">Formación Académica</h2>
-        </div>
-      </div>
-      <div class="row" id="formaciones">
-        <div class="col-lg-4">
-          <div class="media">
-            <img src="/imgs/ESFE.png" class="mr-3" alt="Escuela tecnica">
-            <div class="media-body">
-              <h5 class="mt-0">Escuela Superior Franciscana Especializada/AGAPE</h5>
-              <p class="text-muted">Egresado en julio de 2021</p>
-              <p>Tecnico en Ingenieria de Desarrollo de Software</p>
+    <!-- Habilidades -->
+    <section id="habilidades">
+      <div class="container text-light">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="mb-3 text-center" style="margin-top: 9%;">Habilidades</h2>
+            <div class="progress-tittle">
+              <h3>HTML</h3>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  style="width: 75%; background: rgb(132, 0, 255)"
+                >
+                  <div class="progress-value">75%</div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="media">
-            <img src="/imgs/COED.png" class="mr-3" alt="Complejo educativo">
-            <div class="media-body">
-              <h5 class="mt-0">Complejo Educativo Thomas Jefferson</h5>
-              <p class="text-muted">Graduado en el año 2020</p>
-              <p>Bachiller Tecnico Vocacional En Infraestructura Tecnologica y Servicios Informaticos</p>
+            <div class="progress-tittle">
+              <h3>CSS</h3>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  style="width: 60%; background: rgb(0, 140, 255)"
+                >
+                  <div class="progress-value">60%</div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="media">
-            <img src="/imgs/Centro.png" class="mr-3" alt="Centro escolar">
-            
-            <div class="media-body">
-              <h5 class="mt-0">Centro Escolar Marginales El Progreso 1 y 2</h5>
-              <p class="text-muted">Graduado en el año 2017</p>
-              <p>Educacion Basica</p>
+            <div class="progress-tittle">
+              <h3>JavaScript</h3>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  style="width: 30%; background: rgb(255, 0, 98)"
+                >
+                  <div class="progress-value">30%</div>
+                </div>
+              </div>
+            </div>
+            <div class="progress-tittle">
+              <h3>Bootstrap</h3>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  style="width: 65%; background: rgb(255, 145, 0)"
+                >
+                  <div class="progress-value">65%</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <br>
-  <!-- Sección de Proyectos -->
-  <section class="projects py-5" id="proyectos">
-    <div class="container">
-      <br>
-      <h2 class="text-center mb-4 text-light">Mis Proyectos</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card" data-aos="flip-left">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Proyecto 1">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 1</h5>
-              <p class="card-text">Descripción breve del proyecto 1.</p>
-              <a href="#" class="btn btn-primary">Ver Proyecto</a>
-            </div>
+    </section>
+
+    <!-- Formacion academica -->
+    <section id="formacion" class="text-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2
+              class="section-heading text-uppercase"
+              style="margin-top: 100px"
+            >
+              Formación Académica
+            </h2>
           </div>
         </div>
-        <div class="col-md-4 mb-4" data-aos="flip-right">
-          <div class="card">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Proyecto 2">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 2</h5>
-              <p class="card-text">Descripción breve del proyecto 2.</p>
-              <a href="#" class="btn btn-primary">Ver Proyecto</a>
+        <div class="row" id="formaciones">
+          <div class="col-lg-4">
+            <div class="media">
+              <img src="/imgs/ESFE.png" class="escuela" alt="Escuela tecnica" />
+              <div class="media-body">
+                <h5 class="mt-0">
+                  Escuela Superior Franciscana Especializada/AGAPE
+                </h5>
+                <p class="text-muted">Egresado en julio de 2021</p>
+                <p>Tecnico en Ingenieria de Desarrollo de Software</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4" data-aos="flip-left">
-          <div class="card">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Proyecto 3">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Descripción breve del proyecto 3.</p>
-              <a href="#" class="btn btn-primary">Ver Proyecto</a>
+          <div class="col-lg-4">
+            <div class="media">
+              <img src="/imgs/COED.png" class="mr-3" alt="Complejo educativo" />
+              <div class="media-body">
+                <h5 class="mt-0">Complejo Educativo Thomas Jefferson</h5>
+                <p class="text-muted">Graduado en el año 2020</p>
+                <p>
+                  Bachiller Tecnico Vocacional En Infraestructura Tecnologica y
+                  Servicios Informaticos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="media">
+              <img src="/imgs/Centro.png" class="mr-3" alt="Centro escolar" />
+
+              <div class="media-body">
+                <h5 class="mt-0">
+                  Centro Escolar Marginales El Progreso 1 y 2
+                </h5>
+                <p class="text-muted">Graduado en el año 2017</p>
+                <p>Educacion Basica</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Formulario de contacto -->
-  <section class="container mt-5" id="contacto">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <h2 class="text-center mb-5 text-light">Contáctame</h2>
-        <form>
-          <div class="mb-3">
-            <label for="nombre" class="form-label text-light">Nombre completo:</label>
-            <input type="text" class="form-control bg-secondary" id="nombre" name="nombre" required>
+    <!-- Sección de Proyectos -->
+    <section class="projects py-5" id="proyectos">
+      <div class="container projects">
+        <h2 class="text-center mb-4 text-light">Mis Proyectos</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card" data-aos="flip-left">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="card-img-top"
+                alt="Proyecto 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Descripción breve del proyecto 1.</p>
+                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="correo" class="form-label text-light">Correo electrónico:</label>
-            <input type="email" class="form-control bg-secondary" id="correo" name="correo" required>
+          <div class="col-md-4 mb-4" data-aos="flip-right">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="card-img-top"
+                alt="Proyecto 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 2</h5>
+                <p class="card-text">Descripción breve del proyecto 2.</p>
+                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="asunto" class="form-label text-light">Asunto:</label>
-            <input type="text" class="form-control bg-secondary" id="asunto" name="asunto" required>
+          <div class="col-md-4 mb-4" data-aos="flip-left">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="card-img-top"
+                alt="Proyecto 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">Descripción breve del proyecto 3.</p>
+                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="mensaje" class="form-label text-light">Mensaje:</label>
-            <textarea class="form-control bg-secondary" id="mensaje" name="mensaje" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-        </form>
+        </div>
       </div>
-    </div>
-  </section>
-  <br>
+    </section>
 
-  <!-- Pie de página -->
-  <footer class="bg-dark text-white py-3">
-    <div class="container text-center">
-      <p>Pagina creada por Willian Zape &copy; 2023 </p> 
-    </div>
-  </footer>
+    <!-- Formulario de contacto -->
+    <section class="mt-5" id="contacto">
+      <div class="container-contact">
+        <div class="form-contact">
+          <div class="contact-form">
+            <form action="index.html" id="form-contact">
+              <h3 class="titlecontact">Contáctame</h3>
+              <div class="input-container">
+                <input
+                  type="text"
+                  name="nombre"
+                  class="input"
+                  autocomplete="off"
+                  required
+                />
+                <label for="">Nombre completo</label>
+                <span>Nombre completo</span>
+              </div>
+              <div class="input-container">
+                <input
+                  type="email"
+                  name="correo"
+                  class="input"
+                  autocomplete="off"
+                  required
+                />
+                <label for="">Correo electrónico</label>
+                <span>Correo electrónico</span>
+              </div>
+              <div class="input-container">
+                <input
+                  type="text"
+                  name="asunto"
+                  class="input"
+                  autocomplete="off"
+                  required
+                />
+                <label for="">Asunto</label>
+                <span>Asunto</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="mensaje" class="input" required></textarea>
+                <label for="">Mensaje</label>
+                <span>Mensaje</span>
+              </div>
+              <input type="submit" value="Enviar" class="buttonsend" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Enlazar Bootstrap y Javascript -->
-  <script src="funciones.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-3">
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/williamalexander.sapegaldamez"
+          class="social-icon"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/itz_awet/" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/SrAwet" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="container text-center">
+        <p>Pagina creada por Willian Zape &copy; 2023</p>
+      </div>
+    </footer>
 
-  <!--Funcion de navbar-->
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 700) {
-          $('.navbar').removeClass('bg-transparent').addClass('bg-dark');
-        } else {
-          $('.navbar').removeClass('bg-dark').addClass('bg-transparent');
-        }
+    <!-- Enlazar Bootstrap y Javascript -->
+    <script src="funciones.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Funcion de navbar-->
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 700) {
+            $(".navbar").removeClass("bg-transparent").addClass("bg-dark");
+          } else {
+            $(".navbar").removeClass("bg-dark").addClass("bg-transparent");
+          }
+        });
       });
-    });
-  </script>
+    </script>
 
-  <!--Iniciar AOS-->
-  <script>
-    AOS.init();
-  </script>
-  
-</body>
-
+    <!--Iniciar AOS-->
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
