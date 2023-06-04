@@ -31,21 +31,6 @@ function easeInOutCubic(t, b, c, d) {
   return c / 2 * (t * t * t + 2) + b;
 }
 
-/*Observador para activar la animación de Habilidades*/
-const observer = new IntersectionObserver(onIntersection, { threshold: 0.5, once: false });
-const section = document.querySelector('#habilidades');
-observer.observe(section);
-
-function onIntersection(entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const animElements = entry.target.querySelectorAll('.progress-bar');
-      animElements.forEach((animElement) => {
-        animElement.classList.add('animacion');
-      });
-    }
-  });
-}
 
 
 //Función para el form de contact
